@@ -28,8 +28,8 @@ body {
   
   /* Öğrenilmesi gereken kodlar ve websiteye yararlı olacak kodlar (Gemini Sayesinde Yapıldı) */
   display: flex;
-  justify-content: left; /* Yatayda (sağ-sol) ortalar */
-  align-items: left; /* Dikeyde (alt-üst) ortalar */
+  justify-content: center; /* Yatayda (sağ-sol) ortalar */
+  align-items: center; /* Dikeyde (alt-üst) ortalar */
   min-height: 50vh; /* Tüm ekran yüksekliğini kullan */
 
 
@@ -43,22 +43,33 @@ body {
   /* Kutunun kendisi için gereken ayarlar */
   padding: 50px;
   max-width: 600px; /* Kutunun çok fazla yanlara yayılmasını önler */
+
+
+  /* BU SATIRDAN SONRA YAZILANLAR KUTU İÇİNDİR. */
+
+  /* Kutunun Rengini ve Şeffaflığını ayarlar */
+  background-color: rgba(255, 255, 255, 0.644);
+  
+  /* Arka planı bulanıklaştırır. */
+  backdrop-filter: blur(10px);
+
+  padding: 40px;
+  margin: 20px;
+  
+  /* Kenarlık Rengini Ayarlar, Kenarları Boyar */
+  border: 2px solid rgb(0, 0, 0);
+  
 }
 
-
-.minimal-links a{
-  color: black !important;
-text-decoration: underline;
-font-weight: bold;
-font-style: italic;
-font-size: 24px;
-text-underline-offset: 4px;
-
+/* Navigasyon menüsündeki tüm linkleri hedefliyoruz */
+.nav-menu a{
+  color: black !important; /* Mavi rengi siyah yapar, !important parametresi tarayıcıyı rengi siyah yapması için zorlar */
+  text-decoration: underline; /* Başlangıçta altı çizgili olur */
+  text-underline-offset: 7px; /* Çizgiyi yazıdan ayırır */
+  font-size: 20px; /* Yazı boyutu ayarlama */
+  transition: 0,2s; /* Geçişin yumuşak olması için */
 }
 
-
-.minimal-links a:hover{
- 
-  text-decoration: none !important;
-  color:#000000 
+.nav-menu a:hover{
+  text-decoration: none !important; /*Alt çizgiyi fare imleci üzerine geldiğinde kaldırır. */
 }
