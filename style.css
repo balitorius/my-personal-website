@@ -1,0 +1,64 @@
+body {
+  /* Arka plan rengi (Resim yüklenmezse eğer) */
+  background-color: #ffffc1;
+
+  /* Arka plan resmi */
+  background-image: url(websitebanner.jpg);
+
+  /* Resmin tüm ekranı kaplamasını sağlar */
+  background-size: cover;
+
+  /* Sayfa kaldırılsa bile resmin sabit kalmasını sağlar */
+  background-attachment: fixed;
+
+  /* Resmi tam ortaya hizalar */
+  background-position: center;
+
+  /* Resmin kendini tekrar etmesini önler */
+  background-repeat: no-repeat;
+
+  /* Websitenin kenarındaki boşluğu sağlayan kod satırı */
+  margin: 0;
+  
+  /* Rengi ayarlar */
+  color: #000000;
+  
+  /* Fontu ayarlar */
+  font-family: 'Courier New', Courier, monospace;
+  
+  /* Öğrenilmesi gereken kodlar ve websiteye yararlı olacak kodlar (Gemini Sayesinde Yapıldı) */
+  display: flex;
+  justify-content: left; /* Yatayda (sağ-sol) ortalar */
+  align-items: left; /* Dikeyde (alt-üst) ortalar */
+  min-height: 50vh; /* Tüm ekran yüksekliğini kullan */
+
+
+}
+
+.container{
+  
+  /* Yazıların kutu içinde nasıl duracağını belirler */
+  text-align: left;
+  
+  /* Kutunun kendisi için gereken ayarlar */
+  padding: 50px;
+  max-width: 600px; /* Kutunun çok fazla yanlara yayılmasını önler */
+}
+
+
+.minimal-links a{
+  color: black !important;
+text-decoration: underline;
+font-weight: bold;
+font-style: italic;
+font-size: 24px;
+text-underline-offset: 4px;
+
+}
+
+
+.minimal-links a:hover{
+ 
+  text-decoration: none !important;
+  color:#000000 
+}
