@@ -1,5 +1,5 @@
 © 2026 BALITORIUS 
 
-Tüm Hakları Saklıdır.
+All rights reserved.
 
-Bu kod, yazarın açık yazılı izni olmadan dağıtım, değiştirme veya ticari kullanım için lisanslanmamıştır.
+This software is not licensed for distribution, modification, or commercial use without explicit written permission from the author.
