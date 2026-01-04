@@ -129,6 +129,8 @@ body {
   border: 2px solid black;
   padding: 20px;
   width: 180px;
+  text-align: center;
+  font-size: 18px;
 
   
 
@@ -140,4 +142,19 @@ body {
 
   margin: 0 !important;
 
+}
+
+.longboxline{
+  border: 0;
+  border-bottom: 2px solid black; /* Çizgi kalınlığını ve rengini ayarla */
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  /* Genişliği tam oturtmak için */
+  width: calc(100% + 23,5%);
+
+  margin-top:15px;
+  margin-bottom: 15px;
+  display: block;
 }
