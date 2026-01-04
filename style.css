@@ -73,3 +73,71 @@ body {
 .nav-menu a:hover{
   text-decoration: none !important; /*Alt çizgiyi fare imleci üzerine geldiğinde kaldırır. */
 }
+/* Yan Kutucuk */
+
+.main-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* İçeriği sayfanın ortasında topla */
+  align-items: flex-start; /*Üstten hizala */
+  gap: 20px; /* Kutucukların arasındaki boşluk */  
+  margin-top: 50px;
+}
+
+.content-area {
+ display: flex;
+ flex-direction: column;
+ gap: 20px; /* Üstteki ve alttaki container arasındaki boşluk */
+}
+
+.nav-container {
+  background: rgba(255, 255, 255, 0.644);
+  backdrop-filter: blur(10px);
+  border: 2px solid black;
+  padding: 15px 30px; /* İçeriden boşluk */
+  display: inline-block; /* Sadece içeriği kadar yer kaplasın */
+
+}
+
+/* nav-menu İçindeki yazıların yan yana kalmasını sağlar */
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.main-wrapper a{
+
+  color: black !important;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  transition: 0,2s;
+}
+
+.main-wrapper a:hover {
+
+  text-decoration: none !important;
+}
+
+/* Yan Kutucuk */
+
+.sidebar {
+ 
+  background-color: rgba(255, 255, 255, 0.644);
+  backdrop-filter: blur(10px);
+  border: 2px solid black;
+  padding: 20px;
+  width: 180px;
+
+  
+
+  /* Uzatmak İçin */
+  min-height: 500px; /* Bu değer arttıkça aşağıya boş uzar */
+}
+
+.container {
+
+  margin: 0 !important;
+
+}
