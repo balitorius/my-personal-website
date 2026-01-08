@@ -135,7 +135,8 @@ body {
   
 
   /* Uzatmak İçin */
-  min-height: 500px; /* Bu değer arttıkça aşağıya boş uzar */
+  min-height: auto;
+  height: fit-content; /* Kutuyu tam içeriğine göre sıralar */
 }
 
 .container {
@@ -152,9 +153,34 @@ body {
   margin-right: -20px;
 
   /* Genişliği tam oturtmak için */
-  width: calc(100% + 23,5%);
+  width: calc(100% + 23.3%);
 
   margin-top:15px;
   margin-bottom: 15px;
   display: block;
+}
+
+.jsbox {
+background-color: rgba(255, 255, 255, 0.837); 
+
+border: 2px solid black;
+
+/* Boşlukları kapatmak için gereken ayarlar */
+padding: 15px 0px; /* Üst-Alt 15px, Sağ-Sol 30px olmak üzere boşluğu daralttık */
+margin-top: 10px; /* Üstteki nav-container ile arasındaki mesafe */
+
+/* Boyut Ayarları */
+min-height: auto; /* Kutunun gereksiz yere aşağı uzamasını engeller */
+width: 100%; /* İçine bulunduğu alana tam yayılır */
+max-width: 600px; /* Çok fazla genişleyip tasarımı bozmaz */
+
+/* İçerik Hizalaması */
+text-align: center;
+display: block; /* Bir blok gibi davranmasını sağlar */
+
+}
+
+.jsbox-divider {
+  border: 0px;
+  border-bottom: 2px solid black
 }
