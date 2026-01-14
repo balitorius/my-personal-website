@@ -184,3 +184,44 @@ display: block; /* Bir blok gibi davranmasını sağlar */
   border: 0px;
   border-bottom: 2px solid black
 }
+
+.links-box {
+  background-color: rgba(255, 255, 255, 0.644);
+  border: 2px solid black;
+  padding: 10px; 
+  margin-top: 15px; /* Üstteki kutuyla arayı açar */
+  width: 100%; /* Sidebar genişliğine yayılır */
+  box-sizing: border-box; /* Taşımayı önler */
+  height: auto;
+}
+
+/* links Başlığı için */
+.box-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+/* Linkler için */
+.link-list {
+  display: flex;
+  font-weight: bold;
+  flex-direction: column; /* Linkleri dikey olarak sıralar */
+  gap: 6px; /* Linkler arasındaki boşluk */
+  padding-top: 5px;
+}
+
+.link-list a {
+  font-size: 14px;
+  text-decoration: none !important; /* Alt çizgi sıfırladım */
+  color: black !important;
+  text-align: left; /* Yazılar sola yaslandı */
+  transition: 0.2s;
+}
+
+.link-list a:hover { 
+  text-decoration: underline !important;
+  font-style: italic;
+}
+
