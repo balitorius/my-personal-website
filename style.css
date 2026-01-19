@@ -42,7 +42,7 @@ body {
   
   /* Kutunun kendisi için gereken ayarlar */
   padding: 50px;
-  max-width: 600px; /* Kutunun çok fazla yanlara yayılmasını önler */
+  max-width: 650px; /* Kutunun çok fazla yanlara yayılmasını önler */
 
 
   /* BU SATIRDAN SONRA YAZILANLAR KUTU İÇİNDİR. */
@@ -124,7 +124,7 @@ body {
 
 .sidebar {
  
-  background-color: rgba(255, 255, 255, 0.644);
+  background-color: #ffffffa4;
   backdrop-filter: blur(10px);
   border: 2px solid black;
   padding: 20px;
@@ -142,6 +142,7 @@ body {
 .container {
 
   margin: 0 !important;
+  
 
 }
 
@@ -205,6 +206,8 @@ display: block; /* Bir blok gibi davranmasını sağlar */
 
 /* Linkler için */
 .link-list {
+  background-color: white;
+  border: 2px solid black;
   display: flex;
   font-weight: bold;
   flex-direction: column; /* Linkleri dikey olarak sıralar */
@@ -225,3 +228,42 @@ display: block; /* Bir blok gibi davranmasını sağlar */
   font-style: italic;
 }
 
+.linkboxline{
+  border: 0;
+  border-bottom: 2px solid black; /* Çizgi kalınlığını ve rengini ayarla */
+  margin-left: -12px;
+  margin-right: -12px;
+  width: calc(100% + 11.3%);
+  margin-top:12px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.stats-box{
+  background-color: rgba(255, 255, 255, 0.81);
+  border: 2px solid black;
+  padding: 10px 0;
+  margin-top: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.stats-box-inner{
+  background-color: white;
+  border: 2px solid black;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.statboxline{
+  border: 0;
+  border-bottom: 2px solid black;
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
