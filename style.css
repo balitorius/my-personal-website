@@ -26,6 +26,12 @@ body {
   /* Fontu ayarlar */
   font-family: 'Courier New', Courier, monospace;
   
+  /* Öğrenilmesi gereken kodlar ve websiteye yararlı olacak kodlar (Gemini Sayesinde Yapıldı) */
+  display: flex;
+  justify-content: center; /* Yatayda (sağ-sol) ortalar */
+  align-items: center; /* Dikeyde (alt-üst) ortalar */
+  min-height: 50vh; /* Tüm ekran yüksekliğini kullan */
+
 }
 
 body:has(.main-wrapper) {
@@ -44,7 +50,7 @@ body:has(.profile-container) {
   padding: 20px 0;
   overflow: hidden;
   height: 100vh;
-}
+} 
 
 .container{
   
