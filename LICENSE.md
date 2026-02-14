@@ -1,0 +1,5 @@
+© 2026 BALITORIUS 
+
+All rights reserved.
+
+This code is not licensed for distribution, modification, or commercial use without explicit written permission from the author. For review purposes only.

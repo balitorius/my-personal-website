@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Placeholder">
+    <title>BALITORIUS</title>
+    <link rel="icon" type="png" href="../assets/img/favicon.png">
+    <link rel="stylesheet" href="../src/styles/main.css">
+    
+  <script>
+
+    function changeContent(tur){
+      const box = document.getElementById('dynamic-zone');
+
+      if (tur === 'updates') {
+        box.innerHTML = `
+         <p style="font-size: 24px; font-style: italic; margin-top: 0;"><b>updates</b></p>
+         <hr class="jsbox-divider">
+         <p style="font-size: 18px; margin-bottom: 0;"><b>v0.2.8-alpha</b></p>
+         
+         <ul style="font-size: 12px; margin-top: 5; padding-left: 13px;">
+          <li><b>Updated "aboutme.html"</b></li>
+    
+          </ul>
+        `;
+      }
+      else if (tur === 'to-do') {
+        box.innerHTML = `
+        <p style="font-size: 24px; font-style: italic; margin-top: 0;"><b>to-do list</b>
+        <hr class="jsbox-divider">
+        
+       <ul style="font-size: 14px; margin-top: 5; padding-left: 20px">
+        <li><b>Language options</li>
+        <li><b>Update subpages</b></li>
+       </ul>
+        `;
+
+      }    
+   }
+  </script>
+  
+<!--16. ve 27. Satırdaki "margin-top: 0;" sayesinde en üstteki boşluğu sildik.-->
+<!--18. Satırdaki "margin-bottom: 0;" sayesinde en alttaki boşluğu sildik.-->
+<!-- <ul> komutlarındaki "padding-left: 20px;" komutu sayesinde sola doğru daha yakın oldu ve daha düzenli oldu.-->
+</head>
+  <body>
+   <div class="main-wrapper"> 
+     <div class="sidebar-container"><div class="sidebar">
+           <a href="javascript:void(0)" onclick="changeContent('updates')"><i><b>updates</b></i></a> <b>|</b>
+           <a href="javascript:void(0)" onclick="changeContent('to-do')"><i><b>to-do</b></i></a>
+           <hr class="longboxline">
+            <div class="jsbox" id="dynamic-zone">
+                 <p style="font-size: 12px; font-style: italic"> <b><i>Click the buttons above to see pages.</b></i></p>
+            </div>
+     </div>
+
+       <div class="links-box">
+          <p class="box-title">links</p>
+          <hr class="linkboxline">
+          <div class="link-list">
+                <ul>
+                 <li><a href="https://youtube.com/@balitorius" target="_blank">youtube</a></li>
+                 <li><a href="https://github.com/balitorius" target="_blank"> github </a></li>
+                 <li><a href="https://www.last.fm/de/user/balitorius" target="_blank">last.fm</a></li>
+                 <li><a href="https://letterboxd.com/balitorius" target="_blank">letterboxd</a></li>
+                 <li><a href="https://x.com/@balitorius" target="_blank">twitter</a></li>
+                 <li><a href="https://steamcommunity.com/id/balitorius/" target="_blank">steam</a></li>
+                 <li><a href="https://discord.gg/PDXtYYtkH8" target="_blank">discord</a></li>
+                 <li><a href="https://nerimity.com/i/Lq4aD" target="_blank">nerimity</a></li>
+                </ul>
+          </div>
+        </div>
+
+      <div class="stats-box">
+         <p class="box-title">site stats</p>
+         <hr class="statboxline">
+           <div class="stats-box-inner">
+               <p class="minibox">   
+                   <span id="visitors">Visitors: ...</span><br>
+                   <span id="followers">Followers: ...</span><br> 
+                   <span id="created">Created: ...</span><br>
+           </div>
+      </div>
+     <script src="../src/services/stats.js"></script>
+     </div>
+         
+     <!--Subpages Navigasyon Kutucuğu Buradadır-->
+       <div class="content-area">
+           <div class="nav-container">
+             <div class="nav-menu">
+                <nav>
+              <a href="aboutme.html" class="sekme"><i><b>about me</b></i></a> <b>|</b>
+              <a href="projects.html" class="sekme"><b><i>projects</b></i></a> <b>|</b>
+              <a href="blog.html" class="sekme"><i><b>blog</b></i></a> <b>|</b>
+              <a href="gallery.html" class="sekme"><i><b>gallery</b></i></a> <b>|</b>
+              <a href="https://balitorius.atabook.org" class="sekme"><i><b>guestbook</b></i></a> <b>|</b>
+              <a href="mailto:balitorius@gmail.com" target="_blank"><b><i>contact</b></i></a>
+                </nav>
+            </div>
+           </div>
+        <!-- Yazılar Burda Olucak-->
+         <div class="container">
+             <p style="font-size: 24px; font-style: italic"> <b><i>welcome, mate</b></i></p>
+             <p style="font-size: 20px; font-style: italic"><b><i>hello! im balitorius and this is my personal website about my projects, hobbies and upcoming things that i'm doing.</b></i></p>
+             <!--Website Sürümü-->  
+             <p style="font-size: 15px; font-style: italic"> <b><i>website version: v0.2.8-alpha</b></i></p>
+         </div>
+       </div>
+    </div> 
+  </body>
+</html>

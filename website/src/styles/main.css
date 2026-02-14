@@ -1,0 +1,348 @@
+body {
+  /* Arka plan rengi (Resim yüklenmezse eğer) */
+  background-color: #ffffc1;
+
+  /* Arka plan resmi */
+  background-image: url(../../assets/img/banner.jpg);
+
+  /* Resmin tüm ekranı kaplamasını sağlar */
+  background-size: cover;
+
+  /* Sayfa kaldırılsa bile resmin sabit kalmasını sağlar */
+  background-attachment: fixed;
+
+  /* Resmi tam ortaya hizalar */
+  background-position: center;
+
+  /* Resmin kendini tekrar etmesini önler */
+  background-repeat: no-repeat;
+
+  /* Websitenin kenarındaki boşluğu sağlayan kod satırı */
+  margin: 0;
+  
+  /* Rengi ayarlar */
+  color: #000000;
+  
+  /* Fontu ayarlar */
+  font-family: 'Courier New', Courier, monospace;
+  
+  /* Öğrenilmesi gereken kodlar ve websiteye yararlı olacak kodlar (Gemini Sayesinde Yapıldı) *
+  display: flex;
+  justify-content: center; /* Yatayda (sağ-sol) ortalar */
+  align-items: center; /* Dikeyde (alt-üst) ortalar */
+  min-height: 50vh; /* Tüm ekran yüksekliğini kullan */
+
+}
+
+body:has(.main-wrapper) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+}
+
+body:has(.profile-container) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px 0;
+  overflow: hidden;
+  height: 100vh;
+} 
+
+.container{
+  
+  /* Yazıların kutu içinde nasıl duracağını belirler */
+  text-align: left;
+  
+  /* Kutunun kendisi için gereken ayarlar */
+  padding: 50px;
+  max-width: 650px; /* Kutunun çok fazla yanlara yayılmasını önler */
+
+
+  /* BU SATIRDAN SONRA YAZILANLAR KUTU İÇİNDİR. */
+
+  /* Kutunun Rengini ve Şeffaflığını ayarlar */
+  background-color: rgba(255, 255, 255, 0.644);
+  
+  /* Arka planı bulanıklaştırır. */
+  backdrop-filter: blur(10px);
+
+  padding: 40px;
+  margin: 20px;
+  
+  /* Kenarlık Rengini Ayarlar, Kenarları Boyar */
+  border: 2px solid rgb(0, 0, 0);
+  
+}
+
+/* Navigasyon menüsündeki tüm linkleri hedefliyoruz */
+.nav-menu a{
+  color: black !important; /* Mavi rengi siyah yapar, !important parametresi tarayıcıyı rengi siyah yapması için zorlar */
+  text-decoration: underline; /* Başlangıçta altı çizgili olur */
+  text-underline-offset: 7px; /* Çizgiyi yazıdan ayırır */
+  font-size: 20px; /* Yazı boyutu ayarlama */
+  transition: 0,2s; /* Geçişin yumuşak olması için */
+}
+
+.nav-menu a:hover{
+  text-decoration: none !important; /*Alt çizgiyi fare imleci üzerine geldiğinde kaldırır. */
+}
+/* Yan Kutucuk */
+
+.main-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* İçeriği sayfanın ortasında topla */
+  align-items: flex-start; /*Üstten hizala */
+  gap: 20px; /* Kutucukların arasındaki boşluk */  
+  margin-top: 50px;
+}
+
+.content-area {
+ display: flex;
+ flex-direction: column;
+ gap: 20px; /* Üstteki ve alttaki container arasındaki boşluk */
+}
+
+.nav-container {
+  background: rgba(255, 255, 255, 0.644);
+  backdrop-filter: blur(10px);
+  border: 2px solid black;
+  padding: 15px 30px; /* İçeriden boşluk */
+  display: inline-block; /* Sadece içeriği kadar yer kaplasın */
+
+}
+
+/* nav-menu İçindeki yazıların yan yana kalmasını sağlar */
+.nav-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.main-wrapper a{
+
+  color: black !important;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  transition: 0,2s;
+}
+
+.main-wrapper a:hover {
+
+  text-decoration: none !important;
+}
+
+/* Yan Kutucuk */
+
+.sidebar {
+ 
+  background-color: #ffffffa4;
+  backdrop-filter: blur(10px);
+  border: 2px solid black;
+  padding: 20px;
+  width: 180px;
+  text-align: center;
+  font-size: 18px;
+
+  
+
+  /* Uzatmak İçin */
+  min-height: auto;
+  height: fit-content; /* Kutuyu tam içeriğine göre sıralar */
+}
+
+.container {
+
+  margin: 0 !important;
+  
+
+}
+
+.longboxline{
+  border: 0;
+  border-bottom: 2px solid black; /* Çizgi kalınlığını ve rengini ayarla */
+
+  margin-left: -20px;
+  margin-right: -20px;
+
+  /* Genişliği tam oturtmak için */
+  width: calc(100% + 23.3%);
+
+  margin-top:15px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.jsbox {
+background-color: rgba(255, 255, 255, 0.837); 
+
+border: 2px solid black;
+
+/* Boşlukları kapatmak için gereken ayarlar */
+padding: 15px 0px; /* Üst-Alt 15px, Sağ-Sol 30px olmak üzere boşluğu daralttık */
+margin-top: 10px; /* Üstteki nav-container ile arasındaki mesafe */
+
+/* Boyut Ayarları */
+min-height: auto; /* Kutunun gereksiz yere aşağı uzamasını engeller */
+width: 100%; /* İçine bulunduğu alana tam yayılır */
+max-width: 600px; /* Çok fazla genişleyip tasarımı bozmaz */
+
+/* İçerik Hizalaması */
+text-align: center;
+display: block; /* Bir blok gibi davranmasını sağlar */
+
+}
+
+.jsbox-divider {
+  border: 0px;
+  border-bottom: 2px solid black
+}
+
+.links-box {
+  background-color: rgba(255, 255, 255, 0.644);
+  border: 2px solid black;
+  padding: 10px; 
+  margin-top: 15px; /* Üstteki kutuyla arayı açar */
+  width: 100%; /* Sidebar genişliğine yayılır */
+  box-sizing: border-box; /* Taşımayı önler */
+  height: auto;
+}
+
+/* links Başlığı için */
+.box-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+/* Linkler için */
+.link-list {
+  background-color: white;
+  border: 2px solid black;
+  display: flex;
+  font-weight: bold;
+  flex-direction: column; /* Linkleri dikey olarak sıralar */
+  gap: 6px; /* Linkler arasındaki boşluk */
+  padding-top: 5px;
+}
+
+.link-list a {
+  font-size: 14px;
+  text-decoration: none !important; /* Alt çizgi sıfırladım */
+  color: black !important;
+  text-align: left; /* Yazılar sola yaslandı */
+  transition: 0.2s;
+}
+
+.link-list a:hover { 
+  text-decoration: underline !important;
+  font-style: italic;
+}
+
+.linkboxline {
+  border: 0;
+  border-bottom: 2px solid black; /* Çizgi kalınlığını ve rengini ayarla */
+  margin-left: -12px;
+  margin-right: -12px;
+  width: calc(100% + 11.3%);
+  margin-top:12px;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.stats-box {
+  background-color: rgba(255, 255, 255, 0.81);
+  border: 2px solid black;
+  padding: 10px 0;
+  margin-top: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+
+}
+
+.stats-box-inner {
+  background-color: white;
+  border: 2px solid black;
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.statboxline {
+  border: 0;
+  border-bottom: 2px solid black;
+  margin: 10px 0;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+.profile-image {
+  width: 150px;
+  border-radius: 50%; /* Fotoğrafı yuvarlak yapar ve profil fotoğrafı efekti verir */
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
+}
+
+.profile-name {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+}
+
+.profile-name::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #000000;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.profile-description {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.back-button {
+  display: block;
+  margin: 20px auto 0 auto;
+  padding: 8px 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid black;
+  color: #000000 !important;
+  text-decoration: none !important;
+  font-size: 14px;
+  text-align: center;
+  width: fit-content;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline !important;
+  font-style: italic;
+}
