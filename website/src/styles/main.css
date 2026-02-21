@@ -129,7 +129,7 @@ body:has(.profile-container) {
   color: black !important;
   text-decoration: underline;
   text-underline-offset: 7px;
-  transition: 0,2s;
+  transition: 0.2s;
 }
 
 .main-wrapper a:hover {
@@ -256,34 +256,6 @@ display: block; /* Bir blok gibi davranmasını sağlar */
   display: block;
 }
 
-.stats-box {
-  background-color: rgba(255, 255, 255, 0.81);
-  border: 2px solid black;
-  padding: 10px 0;
-  margin-top: 15px;
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-
-}
-
-.stats-box-inner {
-  background-color: white;
-  border: 2px solid black;
-  margin: 0 10px;
-  padding: 10px;
-  font-size: 14px;
-  line-height: 1.2;
-}
-
-.statboxline {
-  border: 0;
-  border-bottom: 2px solid black;
-  margin: 10px 0;
-  width: 100%;
-  display: block;
-  box-sizing: border-box;
-}
 
 .profile-image {
   width: 150px;
