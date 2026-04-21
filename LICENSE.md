@@ -1,4 +1,5 @@
-```© 2026 BALITORIUS 
+```
+© 2026 BALITORIUS 
 
 All rights reserved.
 
